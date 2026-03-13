@@ -1,3 +1,119 @@
-h{
-    font-family: Verdana;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: #a67458;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    max-width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: burlywood;
+    background-image: url(images/coffe.jpg!d);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    min-height: 400px;
+    padding: 2rem;
+}
+
+.hero-title {
+    margin: 0;
+    font-family: Garamond;
+    font-size: clamp(2rem, 8vw, 4.375rem);
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.spacer {
+    height: 100px;
+    background-color: #a67458;
+}
+
+h {
+    font-family: Garamond;
+    font-weight: bolder;
+    font-size: clamp(1.25rem, 5vw, 2rem);
+}
+
+.content {
+    margin: 5%;
+    padding: 1rem;
+    font-family: Garamond;
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px;
+    background-color: #a67458;
+    color: white;
+    text-decoration: none;
+    font-family: Garamond;
+    font-size: clamp(0.9rem, 3vw, 1.125rem);
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #a67458;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: white;
+    color: #a67458;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .hero {
+        min-height: 300px;
+        background-attachment: scroll;
+        padding: 1rem;
+    }
+
+    .spacer {
+        height: 80px;
+    }
+
+    .content {
+        margin: 4%;
+        padding: 1rem;
+    }
+
+    .button {
+        padding: 12px 30px;
+        width: 80%;
+        max-width: 300px;
+    }
 }
